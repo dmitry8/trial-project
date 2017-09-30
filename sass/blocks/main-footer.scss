@@ -1,0 +1,33 @@
+.main-footer {
+  background-color: $dark-overlay;
+  padding: 60px 0;
+  text-align: center;
+  color: #4E5355;
+}
+
+
+.main-footer__logo {
+  font-family: "Intro", sans-serif;
+  font-size: 22px;
+
+  span {
+    display: block;
+    color: #707476;
+    font-size: 25px;
+  }
+}
+
+.main-footer__copyright {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 20px 0;
+  }
+
+  .main-footer__logo {
+  margin-bottom: 5px;;
+}
+}

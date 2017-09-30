@@ -1,0 +1,46 @@
+.form {
+  background-color: $dark-overlay;
+  padding: 30px 0;
+
+  .container {
+    form {
+      display: grid;
+      grid-gap: $gutter;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .button {
+    margin: 0;
+  }
+}
+
+.form__item {
+  border: none;
+  padding: 15px 20px;
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  background-color: $gray-color;
+  color: #293A43;
+  transition: background-color 0.25s ease;
+
+  &:focus {
+    background-color: $light-gray-bg;
+  }
+}
+
+@media (max-width: 975px) {
+  .form .container {
+    form {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 505px) {
+  .form .container {
+    form {
+      grid-template-columns: 1fr;
+    }
+  }
+}

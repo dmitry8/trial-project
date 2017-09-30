@@ -1,0 +1,105 @@
+// .grid {
+//   display: grid;
+// }
+
+body {
+  // min-width: 1140px;
+  margin: 0;
+  padding: 0;
+  font-family: "Relaway", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #293A43;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// h2 {
+//   font-size: 40px;
+//   color: #2d3950;
+// }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $gutter;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 50px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  border-radius: 2px;
+  background-color: $accent-color;
+  cursor: pointer;
+  margin: 10px;
+  border: none;
+
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: inset 0px -4px 0px 0px rgba(170, 71, 9, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color--hover;
+    box-shadow: inset 0px -4px 0px 0px rgba(170, 71, 9, 0.8);
+  }
+
+  &:active {
+    background-color: #c2510a;
+    box-shadow: inset 0px -4px 0px 0px rgba(121, 50, 6, 0.8);
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: #333;
+    opacity: 0.7;
+    cursor: default;
+    box-shadow: inset 0px -4px 0px 0px rgba(38, 38, 38, 1);
+  }
+}
+
+.button--gray {
+  background-color: $gray-color;
+  box-shadow: inset 0px -4px 0px 0px rgba(54, 65, 73, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $gray-color--hover;
+    box-shadow: inset 0px -4px 0px 0px rgba(54, 65, 73, 0.8);
+  }
+
+  &:active {
+    background-color: #364149;
+    box-shadow: inset 0px -4px 0px 0px rgba(43, 52, 59, 0.8);
+  }
+}
+
+.buttoncase {
+  grid-column: 1 / 5;
+  text-align: center;
+  padding: $gutter $gutter 50px;
+}
